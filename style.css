@@ -1,0 +1,27 @@
+body{
+    background-color: khaki ;
+}
+
+#casio{
+    height: 400px;
+    width: 300px;
+    background-color: #C3C4C7;
+    
+    margin: auto;
+}
+
+#boxes{
+    margin-top: auto;
+    margin-left: 1rem;
+    width: 200px;
+    background-color: green;
+    height: 20px;
+}
+input{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1.5ch;
+    border-radius: 10%; 
+    height: 35px;
+    width: 40px;
+}

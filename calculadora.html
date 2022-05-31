@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <h1>calculadora</h1>
+    <section id="casio">
+        <h1>casio</h1>
+    <form name="calculator">
+        
+        <div id="box"></div>
+            <input id="boxes" type="textfield" name="put" value="" readonly="readonly">
+            <br>
+            <input type="button" value="1" onclick="document.calculator.put.value+='1'">
+            <input type="button" value="2" onclick="document.calculator.put.value+='2'">
+            <input type="button" value="3" onclick="document.calculator.put.value+='3'">
+            <input type="button" value="-" onclick="document.calculator.put.value+='-'">
+            <br>
+ 
+            <input type="button" value="4" onclick="document.calculator.put.value+='4'">
+            <input type="button" value="5" onclick="document.calculator.put.value+='5'">
+            <input type="button" value="6" onclick="document.calculator.put.value+='6'">
+            <input type="button" value="+" onclick="document.calculator.put.value+='+'">
+            <br>
+            <input type="button" value="7" onclick="document.calculator.put.value+='7'">
+            <input type="button" value="8" onclick="document.calculator.put.value+='8'">
+            <input type="button" value="9" onclick="document.calculator.put.value+='9'">
+            <input type="button" value="/" onclick="document.calculator.put.value+='/'">
+            <br>
+            <input type="button" value=". " onclick="document.calculator.put.value+='.'">
+            <input type="button" value="0" onclick="document.calculator.put.value+='0'">
+            <input type="button" value="*" onclick="document.calculator.put.value+='*'">
+            <input type="button" value="=" onclick="document.calculator.put.value=eval(document.calculator.put.value)">
+            <br>
+            <input type="reset" value="C" onclick="document.calculator.put.value+=''">
+            <input type="button" value="x²" onclick="document.calculator.put.value+='**2'">
+            <input type="button" value="√()" onclick="document.calculator.put.value=Math.sqrt(document.calculator.put.value)">
+            <script>
+                if (eval(document.calculator.put.value)==Infinity){
+                    alert("no")
+                }
+            </script>
+    </form>
+</section>
+</body>
+</html>
